@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const userNameElement = document.getElementById("user-name");
+  const storedName = sessionStorage.getItem("userName");
+  if (storedName) {
+    userNameElement.textContent = storedName;
+  }
+});
+
 // Mobile Nav
 const hamburgerMenu = document.querySelector(".mobile-menu-button");
 
@@ -14,10 +22,5 @@ hamburgerMenu.addEventListener("click", () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const userNameElement = document.getElementById("user-name");
-  const storedName = sessionStorage.getItem("userName");
-  if (storedName) {
-    userNameElement.textContent = storedName;
-  }
-});
+console.log("Stored name in sessionStorage:", sessionStorage.getItem("userName"));
+console.log("testtesttest");
