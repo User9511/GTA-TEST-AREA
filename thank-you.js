@@ -1,8 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   const userNameElement = document.getElementById("user-name");
   const storedName = sessionStorage.getItem("userName");
+  const userMessageElement = document.getElementById("user-message"); // Retrieve the user-message element
+  const storedMessage = sessionStorage.getItem("userMessage"); // Retrieve the user's message from sessionStorage
+
   if (storedName) {
     userNameElement.textContent = storedName;
+  }
+
+  if (storedMessage) {
+    userMessageElement.textContent = storedMessage; // Display the user's message on the page
   }
 });
 
