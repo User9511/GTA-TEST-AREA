@@ -1294,6 +1294,11 @@ iframe {
   gap: 0.5rem;
 }
 
+#user-message {
+  color: black;
+  font-style: italic;
+}
+
 .fa-check {
   font-size: 1rem;
   padding: 0.35rem;
