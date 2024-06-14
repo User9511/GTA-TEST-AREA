@@ -1295,6 +1295,7 @@ iframe {
 }
 
 #user-message {
+  font-size: 0.9rem;
   color: black;
   font-style: italic;
 }
@@ -1788,7 +1789,7 @@ iframe {
   }
 
   .form {
-    order: 2;
+    order: 1;
     background-color: var(--theme-color-1);
   }
 
